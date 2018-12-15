@@ -30,6 +30,15 @@ $square-width: 80px;
     padding: 0;
     float: left;
     outline: none;
+    font-size: 3em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      color: #fff;
+      background-color: lighten(#999, 20%);
+    }
   }
 
   .board {
