@@ -1,0 +1,50 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+// GAME BASIC VARIABLES
+
+$font: 'Lato', sans-serif;
+
+$square-background-color: #fff;
+$square-border: 2px solid #999;
+$square-height: 80px;
+$square-width: 80px;
+
+.game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  font-family: $font;
+
+  .square {
+    background-color: $square-background-color;
+    border: $square-border;
+    margin-right: -2px;
+    margin-top: -2px;
+    width: $square-height;
+    height: $square-width;
+    padding: 0;
+    float: left;
+    outline: none;
+  }
+
+  .board {
+    &__status {
+      font-size: 1.2em;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    &__row {
+      &:after {
+        clear: both;
+        content: '';
+        display: block;
+      }
+    }
+  }
+}
